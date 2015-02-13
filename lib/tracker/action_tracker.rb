@@ -8,7 +8,7 @@ module Tracker
     end
 
     def before(controller)
-      track metric_name('finish', controller.params)
+      track metric_name('start', controller.params)
     end
 
     def after(controller)
